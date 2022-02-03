@@ -11,6 +11,13 @@
 		FA7CC00227AC006F00640C0F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7CC00127AC006F00640C0F /* ContentView.swift */; };
 		FA7CC00427AC007300640C0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA7CC00327AC007300640C0F /* Assets.xcassets */; };
 		FA7CC00727AC007300640C0F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA7CC00627AC007300640C0F /* Preview Assets.xcassets */; };
+		FA7CC00E27AC014900640C0F /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7CC00D27AC014900640C0F /* Person.swift */; };
+		FA7CC01027AC015400640C0F /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7CC00F27AC015300640C0F /* DataManager.swift */; };
+		FA7CC01227AC062800640C0F /* ContactsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7CC01127AC062800640C0F /* ContactsListView.swift */; };
+		FA7CC01427AC063800640C0F /* NumbersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7CC01327AC063800640C0F /* NumbersListView.swift */; };
+		FA7CC01627AC065200640C0F /* DetailedContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7CC01527AC065200640C0F /* DetailedContactView.swift */; };
+		FA7CC01827AC09C000640C0F /* ContactsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7CC01727AC09C000640C0F /* ContactsRow.swift */; };
+		FA7CC01A27AC117600640C0F /* NumberRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7CC01927AC117600640C0F /* NumberRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,13 @@
 		FA7CC00127AC006F00640C0F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FA7CC00327AC007300640C0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA7CC00627AC007300640C0F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FA7CC00D27AC014900640C0F /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		FA7CC00F27AC015300640C0F /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		FA7CC01127AC062800640C0F /* ContactsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsListView.swift; sourceTree = "<group>"; };
+		FA7CC01327AC063800640C0F /* NumbersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersListView.swift; sourceTree = "<group>"; };
+		FA7CC01527AC065200640C0F /* DetailedContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedContactView.swift; sourceTree = "<group>"; };
+		FA7CC01727AC09C000640C0F /* ContactsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsRow.swift; sourceTree = "<group>"; };
+		FA7CC01927AC117600640C0F /* NumberRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +67,13 @@
 			children = (
 				FA7CBFFF27AC006F00640C0F /* HW_3_5App.swift */,
 				FA7CC00127AC006F00640C0F /* ContentView.swift */,
+				FA7CC01927AC117600640C0F /* NumberRow.swift */,
+				FA7CC01127AC062800640C0F /* ContactsListView.swift */,
+				FA7CC01727AC09C000640C0F /* ContactsRow.swift */,
+				FA7CC01327AC063800640C0F /* NumbersListView.swift */,
+				FA7CC01527AC065200640C0F /* DetailedContactView.swift */,
+				FA7CC00D27AC014900640C0F /* Person.swift */,
+				FA7CC00F27AC015300640C0F /* DataManager.swift */,
 				FA7CC00327AC007300640C0F /* Assets.xcassets */,
 				FA7CC00527AC007300640C0F /* Preview Content */,
 			);
@@ -137,7 +158,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA7CC01227AC062800640C0F /* ContactsListView.swift in Sources */,
+				FA7CC01627AC065200640C0F /* DetailedContactView.swift in Sources */,
+				FA7CC01427AC063800640C0F /* NumbersListView.swift in Sources */,
+				FA7CC01827AC09C000640C0F /* ContactsRow.swift in Sources */,
+				FA7CC00E27AC014900640C0F /* Person.swift in Sources */,
+				FA7CC01027AC015400640C0F /* DataManager.swift in Sources */,
 				FA7CC00227AC006F00640C0F /* ContentView.swift in Sources */,
+				FA7CC01A27AC117600640C0F /* NumberRow.swift in Sources */,
 				FA7CC00027AC006F00640C0F /* HW_3_5App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,7 +314,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -315,7 +343,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
