@@ -32,7 +32,8 @@ struct DetailedContactView: View {
                         .foregroundColor(.blue)
                     Text(person.email)
                 }
-            }.navigationTitle(person.fullName)
+            }.listStyle(InsetGroupedListStyle())
+            .navigationTitle(person.fullName)
         }
     }
 }

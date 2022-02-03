@@ -16,24 +16,25 @@ struct NumberRow: View {
         
         VStack {
             List {
-                HStack {
-                    Spacer()
-                    Image(systemName: "person.fill")
-                        .resizable()
-                        .frame(width: 150, height: 150)
-                    Spacer()
+                Section {
+                    HStack {
+                        Image(systemName: Contacts.phone.rawValue)
+                            .foregroundColor(.blue)
+                        Text(person.phoneNumber)
+                    }
+                    HStack {
+                        Image(systemName: Contacts.email.rawValue)
+                            .foregroundColor(.blue)
+                        Text(person.email)
+                    }
+                
+                } header: {
+                    Text("\(person.fullName)")
                 }
-                HStack {
-                    Image(systemName: Contacts.phone.rawValue)
-                        .foregroundColor(.blue)
-                    Text(person.phoneNumber)
-                }
-                HStack {
-                    Image(systemName: Contacts.email.rawValue)
-                        .foregroundColor(.blue)
-                    Text(person.email)
-                }
-            }.navigationTitle(person.fullName)
+
+                
+            }.listStyle(InsetGroupedListStyle())
+            .navigationTitle(person.fullName)
         }
     }
 }
