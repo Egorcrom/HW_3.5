@@ -10,7 +10,6 @@ import SwiftUI
 struct NumberRow: View {
     
     let person: Person
-
     
     var body: some View {
         
@@ -27,14 +26,10 @@ struct NumberRow: View {
                             .foregroundColor(.blue)
                         Text(person.email)
                     }
-                
                 } header: {
                     Text("\(person.fullName)")
                 }
-
-                
             }.listStyle(InsetGroupedListStyle())
-            .navigationTitle(person.fullName)
         }
     }
 }

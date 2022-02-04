@@ -8,19 +8,9 @@
 import SwiftUI
 
 struct NumbersListView: View {
+
     let persons: [Person]
-    
-//    var body: some View {
-//
-//        List(persons) { person in
-//            NumberRow(person: person)
-//                .frame(height: 170)
-//        }.listStyle(.sidebar)
-//            .navigationTitle("Contact List")
-//    }
-//}
-    
-    
+
     var body: some View {
         
         List(persons) { person in
@@ -35,12 +25,11 @@ struct NumbersListView: View {
                         .foregroundColor(.blue)
                     Text(person.email)
                 }
-            
             } header: {
                 Text("\(person.fullName)")
             }
-        }.listStyle(InsetGroupedListStyle())//.listStyle(.sidebar)
-            .navigationTitle("Contact List")
+        }.listStyle(InsetGroupedListStyle())
+            //.navigationTitle("Contact List")
     }
 }
 

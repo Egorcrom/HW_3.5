@@ -15,24 +15,19 @@ class DataManager {
         "John", "Simon", "Will", "Ben",
         "Jack", "Tim", "Bob", "Ted"
     ]
-    
     let surnames = [
         "Doe", "Smith", "Brown", "Carter",
         "West", "White", "Green", "Einstein"
     ]
-    
     let emails = [
         "onlyforspam@gmail.com", "donttextme@gmail.com",
         "afkfortenyears@gmail.com", "trashinbox@gmail.com",
         "notforwork@gmail.com", "fakemail@gmail.com",
         "africanprince@gmail.com", "6c6f6c@gmail.com"
     ]
-    
     let phones = [
         "945382945", "316294512", "806372945", "956284723",
         "824734562", "623451321","987654321", "123456789"
     ]
-    
     private init() {}
-    
 }

@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
         NavigationView {
             TabView {
@@ -21,7 +22,7 @@ struct ContentView: View {
                         Image(systemName: "phone.fill")
                         Text("Numbers")
                     }
-            }
+            }.navigationTitle("Contact List")
         }
     }
 }

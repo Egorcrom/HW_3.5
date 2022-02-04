@@ -8,8 +8,8 @@
 import Foundation
 
 struct Person: Identifiable {
-    var id: Int
     
+    let id: Int
     let name: String
     let surname: String
     let phoneNumber: String
@@ -58,8 +58,8 @@ extension Person {
         let ids = DataManager.shared.ids.shuffled()
         let names = DataManager.shared.names.shuffled()
         let surnames = DataManager.shared.surnames.shuffled()
-        let emails = DataManager.shared.emails.shuffled()
         let phones = DataManager.shared.phones.shuffled()
+        let emails = DataManager.shared.emails.shuffled()
         
         let person = Person(
             id: ids[0],
@@ -70,7 +70,6 @@ extension Person {
         
         return person
     }
-    
 }
 
 enum Contacts: String {

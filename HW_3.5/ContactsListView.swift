@@ -12,18 +12,15 @@ struct ContactsListView: View {
     let persons: [Person]
     
     var body: some View {
-
         List(persons) { person in
             ZStack {
                 NavigationLink(" ", destination: DetailedContactView(person: person))
                     ContactsRow(person: person)
             }
-            
-        }
-        .listStyle(.plain)
-        .navigationTitle("Contact List")
+        }.listStyle(.plain)
     }
 }
+ 
 
 struct ContactsListView_Previews: PreviewProvider {
     static var previews: some View {
