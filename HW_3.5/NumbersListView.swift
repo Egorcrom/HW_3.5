@@ -29,7 +29,6 @@ struct NumbersListView: View {
                 Text("\(person.fullName)")
             }
         }.listStyle(InsetGroupedListStyle())
-            //.navigationTitle("Contact List")
     }
 }
 
